@@ -17,12 +17,12 @@ select 고객이름 from 고객
                                 where 주문.주문일자 = '2026-08-01' and 주문.주문고객=고객.고객아이디
                 );
 -- 고객테이블에 고객아이디가 kiwi, 고객이름이 김유정, 나이가 32세, 등급이 gold, 직업이 연예인, 적립금이 1000원인 새로운 고객의 정보를 삽입하시오.
-insert into 고객 values('kiwi', '김유정', 32, 'gold', 1000, '연예인');
+insert into 고객 values('kiwi', '김유정', 32, 'gold', '연예인', 1000);
 select * from 고객;
  
 -- 고객테이블에 고객아이디 tomato, 고객이름 정은심, 나이 36세, 등급 silver, 적립금 4000원, 직업은 모르는 새로운 고객의 정보를 삽입하시오.
 insert into 고객(고객아이디, 고객이름, 나이, 등급, 적립금) values('tomato', '정은심', 36, 'silver', 4000);
-insert into 고객 values('tomato2', '정은심', 36, 'silver', 4000, 'null');
+insert into 고객 values('tomato2', '정은심', 36, 'silver', 'null', 4000);
 select * from 고객;
  
 -- 한빛제과에서 제조한 제품의 제품명, 재고량, 단가를 제품테이블에서 검색하여 한빛제품 테이블에 추가하시오.
